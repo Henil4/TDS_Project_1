@@ -5,7 +5,7 @@
       "src": "app.py",
       "use": "@vercel/python",
       "config": {
-        "buildCommand": "bash scripts/download-db.sh"
+        "buildCommand": "echo Hello from Vercel && bash scripts/download-db.sh"
       }
     }
   ],
