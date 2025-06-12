@@ -1,12 +1,10 @@
 {
   "version": 2,
+  "buildCommand": "bash scripts/download-db.sh",
   "builds": [
     {
       "src": "app.py",
-      "use": "@vercel/python",
-      "config": {
-        "buildCommand": "echo Hello from Vercel && bash scripts/download-db.sh"
-      }
+      "use": "@vercel/python"
     }
   ],
   "routes": [
