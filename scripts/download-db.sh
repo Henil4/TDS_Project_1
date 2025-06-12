@@ -10,14 +10,14 @@ echo "📂 Files before download:"
 ls -lh
 
 # Try to download
-curl -L "https://github.com/Henil4/TDS_Project_1/releases/download/v1.0.0/your.db" -o ./your.db
+curl -L "https://github.com/Henil4/TDS_Project_1/releases/download/V1.0.0/knowledge_base.db" -o ./knowledge_base.db
 
 # Check success
-if [ -f "./your.db" ]; then
-  echo "✅ Download complete: your.db"
-  ls -lh ./your.db
+if [ -f "./knowledge_base.db" ]; then
+  echo "✅ Download complete: ./knowledge_base.db"
+  ls -lh ./knowledge_base.db
 else
-  echo "❌ Failed to download your.db"
+  echo "❌ Failed to download ./knowledge_base.db"
   exit 1
 fi
 
